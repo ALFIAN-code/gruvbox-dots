@@ -157,7 +157,13 @@ cat << "EOF"
     |_|                         |___/   
 
 EOF
+
+sudo chmod a+wr /opt/spotify
+sudo chmod a+wr /opt/spotify/Apps -R
+
 curl -fsSL https://raw.githubusercontent.com/spicetify/spicetify-cli/master/install.sh | sh
+spicetify backup apply
+spicetify apply
 
 
 #install flutter ============================================================
@@ -181,8 +187,8 @@ echo "
 
 create alfian folder......
 "
-mkdir alfianSpace 
-cd alfianSpace
+mkdir ~/alfianSpace 
+cd ~/alfianSpace
 mkdir kampus ngoding
 
 cd ngoding
