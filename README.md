@@ -1,9 +1,11 @@
 
 # Readme
 
-ini adalah sebuah dotsfile pribadi saya yang membantu saya saat akan menginstall ulang sistem saya dan tidak punya waktu lebih untuk setup satu persatu, saya bisa menggunakan ini 
+This is a personal dotfile of mine that helps me when reinstalling my system and don't have much time to set up everything manually. I can use this.
 
-disclaimer : dots file ini adalah dotfile pribadi, jadi mungkin tidak sepenunya berjalan baik di komputer anda 
+Disclaimer: This dotfile is a personal dotfile, so it may not fully work on your computer.
+
+This is my first dotfile, so there may be scripts that are not efficient.
 
 
 
