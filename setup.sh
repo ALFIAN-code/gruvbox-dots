@@ -85,6 +85,9 @@ if [ $? -ne 0 ]; then
     mkdir ~/.local/share/fonts/
 fi
 
+#sddm ===============================
+
+sudo systemctl disable gdm && sudo systemctl enable sddm
 sudo cp -r catppuccin-mocha /usr/share/sddm/themes/
 
 sudo sh -c 'echo "
