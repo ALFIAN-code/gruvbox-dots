@@ -4,6 +4,7 @@
 This is a personal dotfile of mine that helps me when reinstalling my system and don't have much time to set up everything manually. I can use this.
 
 Disclaimer: This dotfile is a personal dotfile, so it may not fully work on your computer.
+tested on endavour os (gnome)
 
 This is my first dotfile, so there may be scripts that are not efficient.
 
