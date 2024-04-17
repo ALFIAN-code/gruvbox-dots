@@ -72,16 +72,34 @@ cat << "EOF"
 
 EOF
 
-cd hyprland-gruvbox-dots
-
 cp -r .config/* ~/.config/
+
+# Menjalankan perintah
 cp -r fonts/* ~/.local/share/fonts/
-cp -r catppuccin-mocha /usr/share/sddm/themes/
+
+# Memeriksa kode keluaran perintah sebelumnya
+if [ $? -ne 0 ]; then
+    echo "Perintah gagal. Menjalankan perintah alternatif..."
+
+    # Menjalankan perintah alternatif
+    mkdir ~/.local/share/fonts/
+fi
+
+sudo cp -r catppuccin-mocha /usr/share/sddm/themes/
 
 sudo sh -c 'echo "
 [Theme]
 Current=catppuccin-mocha
 " >> /etc/sddm.conf'
+
+sudo sh -c  'echo "
+desktop="Hyprland"
+
+# Memeriksa desktop environment
+if [ "$XDG_CURRENT_DESKTOP" == "$desktop" ]; then
+    export QT_STYLE_OVERRIDE=kvantum
+fi
+" >> /etc/environment'
 
 
 #install fish ============================================================
@@ -99,17 +117,7 @@ cat << "EOF"
 
 EOF
 
-chsh -s $(which fish)
-
-echo "
-
-desktop="Hyprland"
-
-# Memeriksa desktop environment
-if [ "$XDG_CURRENT_DESKTOP" == "$desktop" ]; then
-    export QT_STYLE_OVERRIDE=kvantum
-fi
-"
+sudo chsh -s $(which fish)
 
 
 #configure snapd ============================================================
@@ -133,6 +141,7 @@ EOF
 
 sudo systemctl enable --now snapd.socket
 sudo systemctl enable --now snapd.apparmor.service
+sudo ln -s /var/lib/snapd/snap /snap
 
 #install spicetify ==========================================================
 cat << "EOF"
