@@ -72,8 +72,6 @@ cat << "EOF"
 
 EOF
 
-curl -sS https://starship.rs/install.sh | sh
-
 cp -r .config/* ~/.config/
 
 # Menjalankan perintah
@@ -122,6 +120,7 @@ cat << "EOF"
 
 EOF
 
+curl -sS https://starship.rs/install.sh | sh
 sudo chsh -s $(which fish)
 
 
