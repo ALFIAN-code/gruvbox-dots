@@ -72,6 +72,8 @@ cat << "EOF"
 
 EOF
 
+curl -sS https://starship.rs/install.sh | sh
+
 cp -r .config/* ~/.config/
 
 # Menjalankan perintah
