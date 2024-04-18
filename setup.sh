@@ -54,7 +54,7 @@ cat << "EOF"
 
 EOF
 
-yay -S qt5-imageformats ffmpegthumbs kde-cli-tools kservice5 xampp dolphin fish kitty grimblast swappy swww swaylock ags neofetch gvfs gnome-bluetooth-3.0 pipewire-pulse NetworkManager hyprland spotify android-studio visual-studio-code-bin waypaper snapd grim swappy slurp sddm sddm-kcm qt6-svg qt6-declarative kvantum-qt5 qt5-wayland qt6-wayland qt6ct qt5ct nwg-look blueman network-manager-applet curl
+yay -S pamixer qt5-imageformats ffmpegthumbs kde-cli-tools kservice5 xampp dolphin fish kitty grimblast swappy swww swaylock ags neofetch gvfs gnome-bluetooth-3.0 pipewire-pulse NetworkManager hyprland spotify android-studio visual-studio-code-bin waypaper snapd grim swappy slurp sddm sddm-kcm qt6-svg qt6-declarative kvantum-qt5 qt5-wayland qt6-wayland qt6ct qt5ct nwg-look blueman network-manager-applet curl
   
 
 
