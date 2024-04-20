@@ -83,6 +83,7 @@ if [ $? -ne 0 ]; then
 
     # Menjalankan perintah alternatif
     mkdir ~/.local/share/fonts/
+    cp -r fonts/* ~/.local/share/fonts/
 fi
 
 #sddm ===============================
