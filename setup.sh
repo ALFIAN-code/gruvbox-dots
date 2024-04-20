@@ -86,6 +86,11 @@ if [ $? -ne 0 ]; then
     cp -r fonts/* ~/.local/share/fonts/
 fi
 
+# grub ===============================
+sudo sh -c "echo "GRUB_THEME="/usr/share/grub/themes/tartarus/theme.txt"" >> /etc/default/grub"
+sudo grub-mkconfig -o /boot/grub/grub.cfg
+
+
 #sddm ===============================
 
 sudo systemctl disable gdm && sudo systemctl enable sddm
@@ -104,6 +109,16 @@ if [ "$XDG_CURRENT_DESKTOP" == "$desktop" ]; then
     export QT_STYLE_OVERRIDE=kvantum
 fi
 " >> /etc/environment'
+
+kill firefox
+cd WhiteSur-gtk-theme
+./install.sh
+./tweaks.sh -f alt
+cd ..
+
+cd WhiteSur-icon-theme
+./install.sh
+cd ..
 
 
 #install fish ============================================================
@@ -209,4 +224,12 @@ sudo chmod 777 /opt/lampp/htdocs
 ln -s /opt/lampp/htdocs ~/alfianSpace/kampus/web/ 
 
 
+echo "
 
+
+
+to do : 
+ - change wallpaper with waypaper
+ - change icon gtk with nwg-look/gtk-settings
+
+"
