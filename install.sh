@@ -247,6 +247,9 @@ main() {
     install_spicetify
     flutter_menu
     setup_folder
+
+    echo "enable bluetooth service"
+    systemctl enable bluetooth.service
     
     echo "
 
