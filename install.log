@@ -1,9 +1,9 @@
-[00:59:37 2024-04-18] FETCHING Version 2.36.5
-[00:59:37 2024-04-18] DOWNLOADING https://github.com/spicetify/spicetify-cli/releases/download/v2.36.5/spicetify-2.36.5-linux-amd64.tar.gz
-[01:00:36 2024-04-18] EXTRACTING /home/alfian/.spicetify/spicetify.tar.gz
-[01:00:37 2024-04-18] SETTING EXECUTABLE PERMISSIONS TO /home/alfian/.spicetify/spicetify
-[01:00:37 2024-04-18] REMOVING /home/alfian/.spicetify/spicetify.tar.gz
-[01:00:37 2024-04-18] spicetify path already set in /home/alfian/.bashrc, continuing...
-[01:00:37 2024-04-18] spicetify path already set in /home/alfian/.bash_profile, continuing...
-[01:00:37 2024-04-18] spicetify v2.36.5 was installed successfully to /home/alfian/.spicetify
-[01:00:37 2024-04-18] Run 'spicetify --help' to get started
+[11:47:38 2024-04-27] FETCHING Version 2.36.8
+[11:47:38 2024-04-27] DOWNLOADING https://github.com/spicetify/spicetify-cli/releases/download/v2.36.8/spicetify-2.36.8-linux-amd64.tar.gz
+[11:47:42 2024-04-27] EXTRACTING /home/alfian/.spicetify/spicetify.tar.gz
+[11:47:42 2024-04-27] SETTING EXECUTABLE PERMISSIONS TO /home/alfian/.spicetify/spicetify
+[11:47:42 2024-04-27] REMOVING /home/alfian/.spicetify/spicetify.tar.gz
+[11:47:42 2024-04-27] spicetify path already set in /home/alfian/.bashrc, continuing...
+[11:47:42 2024-04-27] spicetify path already set in /home/alfian/.bash_profile, continuing...
+[11:47:42 2024-04-27] spicetify v2.36.8 was installed successfully to /home/alfian/.spicetify
+[11:47:42 2024-04-27] Run 'spicetify --help' to get started

@@ -1,4 +1,45 @@
 #!/bin/bash
+
+# Function to display the menu
+display_menu() {
+    echo "Menu Options:"
+    echo "1. Install SDDM theme"
+    echo "2. Skip SDDM theme installation"
+    echo "3. Exit"
+}
+
+# Function to process user input
+process_input() {
+    read -p "Enter your choice: " choice
+    case $choice in
+        1)
+            install_sddm_theme
+            ;;
+        2)
+            echo "Skipping SDDM theme installation."
+            ;;
+        *)
+            echo "Invalid choice. Please enter a number between 1 and 3."
+            ;;
+    esac
+}
+
+# Function to install SDDM theme
+install_sddm_theme() {
+    # Disable gdm and enable sddm
+    sudo systemctl disable gdm && sudo systemctl enable sddm
+    
+    # Copy the theme to the appropriate directory
+    sudo cp -r catppuccin-mocha /usr/share/sddm/themes/
+    
+    # Add theme configuration to sddm.conf
+    sudo sh -c 'echo "
+[Theme]
+Current=catppuccin-mocha
+" >> /etc/sddm.conf'
+    
+    echo "SDDM theme installed successfully."
+}
 cat << "EOF"
 
 *********************************************************
@@ -87,11 +128,15 @@ if [ $? -ne 0 ]; then
 fi
 
 # grub ===============================
+cd grub-theme
+sudo cp tartarus -r /usr/share/grub/themes/
 sudo sh -c "echo "GRUB_THEME="/usr/share/grub/themes/tartarus/theme.txt"" >> /etc/default/grub"
 sudo grub-mkconfig -o /boot/grub/grub.cfg
+cd ..
 
 
 #sddm ===============================
+
 
 sudo systemctl disable gdm && sudo systemctl enable sddm
 sudo cp -r catppuccin-mocha /usr/share/sddm/themes/
@@ -111,12 +156,16 @@ fi
 " >> /etc/environment'
 
 kill firefox
-cd WhiteSur-gtk-theme
+cd gtk-theme
 ./install.sh
 ./tweaks.sh -f alt
 cd ..
 
-cd WhiteSur-icon-theme
+cd gtk-icon
+./install.sh
+cd ..
+
+cd kde-theme
 ./install.sh
 cd ..
 
