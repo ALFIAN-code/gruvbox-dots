@@ -252,8 +252,8 @@ main() {
 
 
 to do :
- - change wallpaper with waypaper
- - change icon gtk with nwg-look/gtk-settings
+ - find nice wallpaper, and set it with waypaper
+ - open "GTK setting" and change icon theme to bigsur
 
     "
     exit 0
