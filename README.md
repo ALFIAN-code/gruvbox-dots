@@ -64,7 +64,7 @@ cd hyprland-gruvbox-dots
 
 run script instalation
 ```bash
-  ./setup.sh
+  ./install.sh
 ```
 
 
