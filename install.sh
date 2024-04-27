@@ -66,8 +66,10 @@ EOF
     # grub ===============================
     cd grub-theme
     sudo cp tartarus -r /usr/share/grub/themes/
+    sudo sh -c "echo "GRUB_DISABLE_OS_PROBER=false" >> /etc/default/grub"
     sudo sh -c "echo "GRUB_THEME="/usr/share/grub/themes/tartarus/theme.txt"" >> /etc/default/grub"
     sudo grub-mkconfig -o /boot/grub/grub.cfg
+    
     cd ..
     
     install_sddm_menu
@@ -260,7 +262,6 @@ to do :
 
     "
     exit 0
-    
 }
 
 main
