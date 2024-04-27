@@ -140,7 +140,7 @@ yay -S fish
 
 curl -sS https://starship.rs/install.sh | sh
 echo "starship init fish | source" >> ~/.config/fish/config.fish
-sudo chsh -s $(which fish)
+chsh -s $(which fish)
 
 
 #configure snapd ============================================================
