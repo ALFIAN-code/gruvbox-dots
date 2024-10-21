@@ -1,6 +1,6 @@
 #install dependencies
 install_dependencies() {
-    sudo pacman -Syyu brightnessctl yay rofi v4l-utils v4l2loopback-utils v4l2loopback-dkms xdg-desktop-portal-hyprland xwaylandvideobridge dunst pamixer qt5-imageformats ffmpegthumbs kde-cli-tools kservice5 dolphin kitty grimblast swappy swww swaylock aylurs-gtk-shell neofetch gvfs gnome-bluetooth-3.0 pipewire-pulse NetworkManager hyprland android-studio visual-studio-code-bin waypaper snapd grim swappy slurp qt6-svg qt6-declarative kvantum-qt5 qt5-wayland qt6-wayland qt6ct qt5ct nwg-look blueman network-manager-applet curl
+    yay -Syyu brightnessctl yay rofi v4l-utils v4l2loopback-utils v4l2loopback-dkms xdg-desktop-portal-hyprland xwaylandvideobridge dunst pamixer qt5-imageformats ffmpegthumbs kde-cli-tools kservice5 dolphin kitty grimblast swappy swww swaylock aylurs-gtk-shell neofetch gvfs gnome-bluetooth-3.0 pipewire-pulse NetworkManager hyprland android-studio visual-studio-code-bin waypaper snapd grim swappy slurp qt6-svg qt6-declarative kvantum-qt5 qt5-wayland qt6-wayland qt6ct qt5ct nwg-look blueman network-manager-applet curl
 }
 
 # Function to display the menu
